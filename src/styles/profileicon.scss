@@ -1,4 +1,4 @@
-@import "/properties";
+@import "./properties";
 
 .storyBorder {
   padding: 2px;
@@ -9,7 +9,6 @@
     $gradient-three 75%,
     $gradient-four 100%
   );
-
   border-radius: 50%;
 }
 
@@ -18,7 +17,7 @@
   border: 2px solid $background-white;
   display: block;
 
-  &.hover {
+  &:hover {
     cursor: pointer;
   }
 

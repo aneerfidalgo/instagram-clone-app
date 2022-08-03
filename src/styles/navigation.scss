@@ -1,4 +1,4 @@
-@import "/properties";
+@import "./properties";
 
 .navigation {
   position: fixed;
@@ -11,7 +11,7 @@
   .container {
     padding: 1em 0 0.9em 0;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
@@ -24,31 +24,33 @@
         cursor: pointer;
       }
     }
+
     .search {
       border: 1px solid $border-color-grey;
       border-radius: 3px;
       background-color: $background-grey;
       min-width: 225px;
       display: flex;
+      align-items: center;
       justify-content: center;
-    }
 
-    .searchIcon {
-      width: 10px;
-      opacity: 0.4;
-      margin-right: 0.3em;
-    }
+      .searchIcon {
+        width: 10px;
+        opacity: 0.4;
+        margin-right: 0.3em;
+      }
 
-    .searchText {
-      color: $font-color-secondary;
-      font-size: 0.85em;
-      font-weight: 300;
-    }
-
-    @media only screen and (max-width: 500px) {
-      .search {
-        display: none !important;
+      .searchText {
+        color: $font-color-secondary;
+        font-size: 0.85em;
+        font-weight: 300;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .search {
+    display: none !important;
   }
 }
