@@ -3,9 +3,9 @@ import ProfileIcon from "./ProfileIcon";
 import users from "../data/users";
 
 function Story() {
-  let accountName = users[Math.floor(math.random() * users.lenght)].username;
+  let accountName = users[Math.floor(math.random() * users.length)].username;
 
-  if (accountName.lenght > 10) {
+  if (accountName.length > 10) {
     accountName = accountName.substring(0, 10) + "...";
   }
 
