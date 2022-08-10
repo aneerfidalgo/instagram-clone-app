@@ -6,7 +6,7 @@ function Comment(props) {
   return (
     <div className="commentContainer">
       <div className="accountName">{accountName}</div>
-      <div className="comment">{comment}</div>
+      <div className="comment">{Comment}</div>
     </div>
   );
 }
